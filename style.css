@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: hankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+p, h2 {
+    font-family: hankenGrotesk, Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: hsla(252, 100%, 67%, 0.041) 0 0 1rem 15px;
+    border-radius: 25px;
+}
+
+.result-container {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding-top: 2.5em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    padding-bottom: 3em;
+}
+
+.result-container p {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+.result-container h2 {
+    color: hsl(241, 100%, 89%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.3em;
+}
+
+.circle-container {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 200px;
+    padding: 2em;
+    min-width: 13em;
+    min-height: 13em;
+    margin-bottom: 1.3em;
+}
+
+#score {
+    font-size: 5rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+#score-label {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.6em;
+}
+
+#score-position {
+    max-width: 14em;
+}
+
+.summary-container {
+    color: hsl(221, 100%, 96%);
+    padding: 2.5em 3.5em 3em;
+}
+
+.summary-container h2 {
+    color: hsl(224, 30%, 27%);
+    font-size: 1.5rem;
+    margin-bottom: 1.3em;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.skill-container div {
+    display: flex;
+    align-items: center;
+}
+
+.skill-heading img {
+    margin-right: 1em;
+}
+
+.reaction-container {
+    background-color: hsla(6, 100%, 97%);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory-container {
+    background-color: hsla(42, 100%, 97%);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal-container {
+    background-color: hsla(180, 100%, 97%);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual-container {
+    background-color: hsla(240, 100%, 97%);
+    color: hsl(234, 85%, 45%);
+}
+
+.skill-score {
+    color: hsl(224, 30%, 27%);
+}
+
+.skill-score + p {
+    color: hsl(233, 9%, 62%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-family: hankenGrotesk;
+    font-size: 1.125rem;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 40px;
+    margin-top: 1.5em;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .result-container {
+        border-radius: 0 0 25px 25px;
+    }
+
+    section {
+        min-height: auto;
+    }
+
+    .result-container {
+        padding: 2.5em 1em 3em;
+    }
+
+    .summary-container {
+        padding: 2.5em 1em 3em;
+    }
+
+    button {
+        margin-top: 1em;
+    }
+}

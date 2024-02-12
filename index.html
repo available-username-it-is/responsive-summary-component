@@ -5,43 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Results summary component</title>
 </head>
 <body>
+  <main>
+    <section>
+      <div class="container">
+        <div class="result-container">
+          <h2>Your Result</h2>
 
-  Your Result
-  76
-  of 100
+          <div class="circle-container">
+            <p id="score">76</p>
+            <p>of 100</p>
+          </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+          <p id="score-label">Great</p>
+          <p id="score-position">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
 
-  Reaction
-  80 / 100
+        <div class="summary-container">
+          <h2>Summary</h2>
+          
+          <div class="skill-container reaction-container">
+            <div class="skill-heading">
+              <img src="assets/images/icon-reaction.svg" alt="">
+              <p>Reaction</p>
+            </div>
 
-  Memory
-  92 / 100
+            <div>
+              <p class="skill-score">80&#160</p>
+              <p> / 100</p>
+            </div>
+          </div>
 
-  Verbal
-  61 / 100
+          <div class="skill-container memory-container">
+            <div class="skill-heading">
+              <img src="assets/images/icon-memory.svg" alt="">
+              <p>Memory</p>
+            </div>
 
-  Visual
-  72 / 100
+            <div>
+              <p class="skill-score">92&#160</p>
+              <p> / 100</p>
+            </div>
+          </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="skill-container verbal-container">
+            <div class="skill-heading">
+              <img src="assets/images/icon-verbal.svg" alt="">
+              <p>Verbal</p>
+            </div>
+
+            <div>
+              <p class="skill-score">61&#160</p>
+              <p> / 100</p>
+            </div>
+          </div>
+
+          <div class="skill-container visual-container">
+            <div class="skill-heading">
+              <img src="assets/images/icon-visual.svg" alt="">
+              <p>Visual</p>
+            </div>
+
+            <div>
+              <p class="skill-score">72&#160</p>
+              <p> / 100</p>
+            </div>
+          </div>
+
+          <button>Continue</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
